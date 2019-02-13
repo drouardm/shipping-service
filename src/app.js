@@ -15,5 +15,5 @@ app.get('/*shipping', (request, response) => {
       response.status(500).send({ error: error.message })
     })
 })
-let PORT = process.env.MICROS_PORT || 3001;
+let PORT = process.env.MICROS_PORT || 8080;
 app.listen(PORT, () => console.log(`ShippingService is listening on port ${PORT}`))
