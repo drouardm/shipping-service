@@ -1,0 +1,18 @@
+metadata:
+  labels:
+    app: shipping-service-11
+  name: shipping-service-11
+  namespace: lab-cnb
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: shipping-service-11
+    spec:
+      containers:
+      - image: mycluster.icp:8500/lab-cnb/shipping-service-11:v1.0.0
+        name: shipping-service-11
+        ports:
+        - containerPort: 8080
+          protocol: TCP
